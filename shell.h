@@ -5,6 +5,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-void prompt(char **av, char ** env);
+void prompt(char **av, char **env);
 
 #endif

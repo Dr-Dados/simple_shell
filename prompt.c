@@ -8,7 +8,7 @@
 void prompt(char **av, char **env)
 {
 char *str = NULL;
-int i = 0, status;
+int i, status;
 size_t n = 0;
 ssize_t sz;
 char *argv[] = {NULL, NULL};
@@ -24,6 +24,7 @@ if (sz == -1)
 free(str);
 exit(EXIT_FAILURE);
 }
+i = 0;
 while (str[i])
 {
 if (str[i] == '\n')

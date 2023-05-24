@@ -16,7 +16,7 @@ pid_t ch_pid;
 
 while (1)
 {
-if (isatty(STDIN_FILENO))
+  /**if (isatty(STDIN_FILENO))*/
 printf("cisfun$ ");
 sz = getline(&str, &n, stdin);
 if (sz == -1)

@@ -13,13 +13,13 @@
 
 int _fork_fun(char **arg, char **av, char **env, char *lineptr, int np, int c)
 {
- 
+
 pid_t child_pid;
 int status = 0, exec_status = 0;
 struct stat stat_lineptr;
 (void)av;
 child_pid = 0;
- (void)np;
+(void)np;
 child_pid = fork();
 if (child_pid == -1)
 {
